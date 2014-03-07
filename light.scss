@@ -459,6 +459,12 @@ $mainGutter: 1.25em;
     position: relative;
     @include breakThat;
     }
+  a.webkite-website{
+    @include ellipsisThis;
+    }
+  p.description{
+    margin-bottom: $mainGutter;
+    }
   a.more-button, a.less-button{
     @include boxedUp;
     @include roundedUp(.188em);

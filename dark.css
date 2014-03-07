@@ -213,13 +213,14 @@
       color: rgba(127, 127, 127, 0.7);
       font-size: .875em;
       line-height: 1.2em;
-      margin: 0 0.15625em;
+      margin: 0 0.41667em;
       vertical-align: top; }
   #webkite-results .webkite-applied-filters > .webkite-toggle {
     cursor: pointer;
     display: inline-block;
     position: absolute;
     margin: 0;
+    outline: none;
     z-index: 2;
     left: 0;
     -webkit-box-sizing: border-box;
@@ -446,6 +447,14 @@
     margin: 0;
     padding: 0;
     white-space: pre-line; }
+#webkite-results a.webkite-website {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+#webkite-results p.description {
+  margin-bottom: 1.25em; }
 #webkite-results a.more-button, #webkite-results a.less-button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
