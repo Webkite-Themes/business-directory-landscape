@@ -21,7 +21,7 @@
       <div class="filter-group-{{@index}}">
         {{#each filters}}
           <a href="#" class="webkite-remove-filter" data-facet="{{this.facet}}" data-operator="{{this.operator}}" data-value="{{this.value}}">{{this.value}}</a>{{#unless @last}}<span>or</span>{{/unless}}
-        {{/each}}      
+        {{/each}}
       </div>
       {{#unless @last}}<span>&</span>{{/unless}}
     {{/each}}
