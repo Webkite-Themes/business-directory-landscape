@@ -227,7 +227,7 @@ $mainGutter: 1.25em;
     display: inline-block;
     height: 1.75em;
     overflow: hidden;
-    padding: $mainGutter/4 1.563em $mainGutter/4 4.688em;
+    padding: $mainGutter/4 1.563em $mainGutter/4 4.563em;
     width: 100%;
     text-align: left;
     /* and & or */
@@ -252,9 +252,7 @@ $mainGutter: 1.25em;
     border: 1px solid $lightestOpacity;
     border-right: 1px solid $lighterOpacity;
     color: $lightOpacity;
-    font-size: 0.875em;
-    font-weight: 700;
-    line-height: 2em;
+    font: 700 .875em/1em "Open Sans";
     padding: 0 $mainGutter/2;
     height: 2em;
     i{
@@ -530,6 +528,8 @@ $mainGutter: 1.25em;
     top: $mainGutter/2;
     left: $mainGutter/2;
     margin: 0;
+    max-height: 12.5em;
+    overflow-y: scroll;
     z-index: 2;
     li {
       padding-bottom: 0;
@@ -573,8 +573,10 @@ $mainGutter: 1.25em;
     float: right; margin-top: $mainGutter/4;
     }
   .sort-menu{width: 95%;}
-  .webkite-filter-area{
+  .webkite-sort-area+.webkite-filter-area{
     margin-top: $mainGutter;
+    }
+  .webkite-filter-area{
     margin-left: 0;
     padding-left: 0;
     }
@@ -605,8 +607,10 @@ $mainGutter: 1.25em;
     float: right; margin-top: $mainGutter/4;
     }
   .sort-menu{width: 95%;}
-  .webkite-filter-area{
+  .webkite-sort-area+.webkite-filter-area{
     margin-top: $mainGutter;
+    }
+  .webkite-filter-area{
     margin-left: 0;
     padding-left: 0;
     }

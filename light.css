@@ -8,7 +8,13 @@
     border: 0;
     font-size: 100%;
     font: inherit;
+    text-transform: none;
     vertical-align: baseline; }
+  #webkite-results button, #webkite-results select, #webkite-results input {
+    text-transform: none; }
+  #webkite-results button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
   #webkite-results article, #webkite-results aside, #webkite-results details, #webkite-results figcaption, #webkite-results figure, #webkite-results footer, #webkite-results header, #webkite-results hgroup, #webkite-results menu, #webkite-results nav, #webkite-results section {
     display: block; }
   #webkite-results body {
@@ -199,7 +205,7 @@
     display: inline-block;
     height: 1.75em;
     overflow: hidden;
-    padding: 0.3125em 1.563em 0.3125em 4.875em;
+    padding: 0.3125em 1.563em 0.3125em 4.563em;
     width: 100%;
     text-align: left;
     /* and & or */ }
@@ -229,9 +235,7 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.6);
-    font-size: 0.875em;
-    font-weight: 700;
-    line-height: 2em;
+    font: 700 .875em/1em "Open Sans";
     padding: 0 0.625em;
     height: 2em; }
     #webkite-results .webkite-applied-filters > .webkite-toggle i {
@@ -526,6 +530,8 @@
   top: 0.625em;
   left: 0.625em;
   margin: 0;
+  max-height: 12.5em;
+  overflow-y: scroll;
   z-index: 2; }
   #webkite-results .webkite-block .inline-filter-menu li {
     padding-bottom: 0; }
@@ -558,8 +564,9 @@
   margin-top: 0.3125em; }
 #webkite-results.xs .sort-menu {
   width: 95%; }
+#webkite-results.xs .webkite-sort-area + .webkite-filter-area {
+  margin-top: 1.25em; }
 #webkite-results.xs .webkite-filter-area {
-  margin-top: 1.25em;
   margin-left: 0;
   padding-left: 0; }
 #webkite-results.xs .webkite-block ul li b, #webkite-results.xs .webkite-block ul li span.facet-values, #webkite-results.xs .webkite-block ul li a, #webkite-results.xs .webkite-block ul li span {
@@ -583,8 +590,9 @@
   margin-top: 0.3125em; }
 #webkite-results.sm .sort-menu {
   width: 95%; }
+#webkite-results.sm .webkite-sort-area + .webkite-filter-area {
+  margin-top: 1.25em; }
 #webkite-results.sm .webkite-filter-area {
-  margin-top: 1.25em;
   margin-left: 0;
   padding-left: 0; }
 #webkite-results.sm .webkite-block ul li b, #webkite-results.sm .webkite-block ul li span.facet-values, #webkite-results.sm .webkite-block ul li a, #webkite-results.sm .webkite-block ul li span {
