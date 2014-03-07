@@ -55,6 +55,7 @@
       {{/if}}
       {{/facet}}
       </li>
+      <div id="{{this.id}}" class="webkite-item-details">
       <li>
         <b>email</b>
         {{#facet name="Email"}}
@@ -72,7 +73,7 @@
         {{/facet}}
       </li>
       <li>
-        <b>phone number</b>
+        <b>fax number</b>
         {{#facet name="Fax Number"}}
         <span class="facet-values">
           <a href="tel:{{displayValue}}">{{displayValue}}</a>
