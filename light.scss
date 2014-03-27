@@ -29,6 +29,7 @@ $mainGutter: 1.25em;
       text-decoration: none; 
     &:hover{color: $linkHover;}
     }
+	&.webkite-fade-out img{opacity: .5;}
   }
   
 /* TYPOGRAPHY */
@@ -68,7 +69,7 @@ $mainGutter: 1.25em;
         text-align: justify;
         padding-bottom: $mainGutter/2;
         b{display: inline-block; text-align: left; width: 39%; vertical-align: text-top;font-weight: 700;}
-        span.facet-values{@extend b; width:59%; font-weight: 400;}
+        span.facet-values{display: inline-block; text-align: left; width:59%; font-weight: 400; vertical-align: text-top;}
         .facet-values.address a > span{display: inline-block; width: 100%;}
         .city, .state{display: inline;}
         .city + .state:before{content: ", ";}
