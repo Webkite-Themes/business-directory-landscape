@@ -38,10 +38,11 @@ $mainGutter: 1.25em;
     margin: 0;
     }
   h2{
-    @include hyphenGreat;
     display: inline-block;
     font: 700 1.5em/1 "Open Sans";
     color: $medOpacity;
+    word-break: break-all;
+    word-break: break-word;
     }
   p, li{
     color: $lightOpacity;

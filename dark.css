@@ -74,14 +74,11 @@
 #webkite-results h1, #webkite-results h2 {
   margin: 0; }
 #webkite-results h2 {
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   display: inline-block;
   font: 700 1.5em/1 "Open Sans";
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.8);
+  word-break: break-all;
+  word-break: break-word; }
 #webkite-results p, #webkite-results li {
   color: rgba(255, 255, 255, 0.7); }
 
